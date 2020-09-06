@@ -1,27 +1,45 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
-  "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "name": "loggerv3",
+  "version": "3.1.0",
+  "description": "Logger version 3, serving over 30,000 Discord servers",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "standard",
+    "lint": "node_modules/.bin/eslint . --ext .js"
   },
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "engines": {
-    "node": "12.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
-  "license": "MIT",
   "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+    "logging",
+    "discord",
+    "bot",
+    "that",
+    "is",
+    "good"
+  ],
+  "author": "Curtis Fowler",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "aes256": "^1.0.4",
+    "bluebird": "^3.7.0",
+    "chalk": "^2.4.2",
+    "cluster": "^0.7.7",
+    "dotenv": "^8.1.0",
+    "eris": "github:abalabahaha/eris#pull/548/head",
+    "ioredis": "^4.14.1",
+    "os": "^0.1.1",
+    "path": "^0.12.7",
+    "pg": "^7.12.1",
+    "pg-format": "^1.0.4",
+    "raven": "^2.6.4",
+    "redis": "^2.8.0",
+    "redlock": "^4.1.0",
+    "rethinkdbdash": "^2.3.31",
+    "standard": "^14.3.1",
+    "superagent": "^5.1.0",
+    "util": "^0.12.1",
+    "ws": "^7.1.2",
+    "zabbix-promise": "^2.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1"
+  }
 }
