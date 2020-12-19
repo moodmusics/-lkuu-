@@ -13,7 +13,7 @@ class GenericCommand {
     this.func = data.func
     this.aliases = data.aliases || []
     this.args = data.args || []
-    this.noDM = data.noDM || true
+    this.noDM = data.noDM || false
     this.perm = data.perm
     this.type = data.type || 'any'
     this.category = data.category || 'Uncategorized'
